@@ -32,7 +32,6 @@ router.register(r'work-by-user-date', views.WorkUserFromToViewSet, base_name="Wo
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^', include(router.urls)),
-    #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('rest-auth/', include('rest_auth.urls')),
     path('rest-auth/registration/', include('rest_auth.registration.urls')),
 ]
